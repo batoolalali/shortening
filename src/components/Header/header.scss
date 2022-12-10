@@ -1,0 +1,116 @@
+@import '../../app.scss';
+
+
+
+#cover {
+    --bs-gutter-x: 0 !important;
+    padding-left: 5rem;
+    p{
+        color: $GrayishViolet;
+    }
+}
+
+
+
+
+#menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    min-height: 80px;
+    box-shadow: none;
+}
+
+.navbar-nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-left: 30px;
+    color: $GrayishViolet;
+    font-size: $FontSize;
+    font-weight: 800;
+}
+
+
+.navbar-nav a:hover {
+    color: $Cyan;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: $VeryDarkViolet !important;
+}
+
+.illustration {
+    width: -webkit-fill-available;
+
+}
+
+.container {
+    padding-left: 5rem !important;
+    margin-left: 0 !important;
+
+}
+
+
+
+
+@media only screen and (max-width: $breakpoint-mobile) {
+    #cover {
+    padding-left: 1rem;
+    flex-direction: column-reverse;
+    }
+
+    .container {
+        padding-left: 1rem !important;
+    }
+    #responsive-navbar-nav{
+        background-color: $DarkViolet;
+        border-radius: 0.375rem;
+        text-align: center;
+    }
+    .sign-up-button{
+        width: 90% !important;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .navbar-nav a{
+        margin-left: 0;
+    }
+
+    .right-nav{
+        border: 1px solid $GrayishViolet;
+    }
+}
+
+@media screen  and (min-width: 787px){
+    
+    .right-nav{
+
+        position: absolute !important;
+        right: 5rem !important;
+    }
+
+}
+
+
+
+.navbar-toggler{
+    width: auto;
+    background-color: #ffff !important;
+    border: none !important;
+
+}
+
+.sign-up-button{
+    border-radius: 2.375rem !important;    
+    background-color: $Cyan !important;
+    --bs-btn-border-color: none !important;
+}
+
+h2{
+    font-size: 4rem !important;
+    font-weight: 800 !important;
+    color: $VeryDarkBlue !important;
+}
+

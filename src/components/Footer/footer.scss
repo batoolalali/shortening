@@ -1,0 +1,47 @@
+@import '../../app.scss';
+
+
+.footer-div {
+    background-color: $VeryDarkViolet;
+    color: #ffff;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    a {
+        color: $GrayishViolet;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    a:hover{
+        color: $Cyan;
+    }
+
+    .row {
+        --bs-gutter-x: 0 !important;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .icons{
+        margin-right: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: $breakpoint-mobile) {
+
+    .footer-div {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    ul{
+        padding: 0 !important;
+        margin-top: 20px !important;
+    }
+
+}

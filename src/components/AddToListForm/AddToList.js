@@ -1,9 +1,8 @@
 import React from "react";
 // import axios from 'axios';
-import { addLinkAsync, selectLinksList } from "./linksListSlicer";
-import { useDispatch, useSelector } from "react-redux";
+import { addLinkAsync } from "./linksListSlicer";
+import { useDispatch } from "react-redux";
 import { Form, Button, Col, Row } from "react-bootstrap";
-import LinksList from "./LinksList";
 import { useState } from "react";
 import './addtoList.scss'
 
@@ -16,7 +15,6 @@ export default function AddToList() {
     setIsActive(true);
   };
 
-  const linksList = useSelector(selectLinksList);
 
   // to dispatch the action to change the state value
   const dispatch = useDispatch();
@@ -26,11 +24,12 @@ export default function AddToList() {
     e.preventDefault();
     console.log(e.target.url.value);
     dispatch(addLinkAsync(e.target.url.value));
+    e.target.reset();
   };
 
   return (
     <div className="links-area">
-      <div className="form-area">
+      <div className="form-area align-middle">
         <Form onSubmit={handelSubmit}>
           <Row>
             <Col sm={8} lg={9} md={9}>
@@ -43,15 +42,9 @@ export default function AddToList() {
                 Shorten It!
               </Button>
             </Col>
-
-
-
           </Row>
           {isActive && <p className="temp-p">Please add a link</p>}
         </Form>
-      </div>
-      <div className="list-area">
-        <LinksList arrayOfLinks={linksList} />
       </div>
     </div>
   );

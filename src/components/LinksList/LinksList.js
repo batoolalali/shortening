@@ -1,20 +1,24 @@
 import React from "react";
-import { ListGroup, Row, Col } from "react-bootstrap";
-import Advanced from "../Advanced/Advanced";
+import { ListGroup } from "react-bootstrap";
 import "./linksList.scss";
 import ListItem from "./ListItem";
+import {  selectLinksList } from "../AddToListForm/linksListSlicer";
+import {  useSelector } from "react-redux";
+
 
 export default function LinksList(props) {
+  const linksList = useSelector(selectLinksList);
+
+
     return (
         <div className="links-list">
             <ListGroup>
-                {props.arrayOfLinks.map((element) => {
+                {linksList.map((element) => {
                     return (
                         <ListItem links={element}/>
                     );
                 })}
             </ListGroup>
-            <Advanced/>
         </div>
     );
 }

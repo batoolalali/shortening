@@ -1,14 +1,11 @@
 @import "../../app.scss";
 
-.links-area {
-    font-size: $FontSize;
-    font-family: $FontFamily;
-    max-width: 100%;
-}
 
-button {
+
+.links-list button , .links-area button{
     width: 100%;
     background-color: $Cyan !important;
+    font-size: $FontSize !important ;
 }
 
 .form-control:focus {
@@ -24,22 +21,13 @@ button {
     font-size: 15px;
 }
 
-form{
-    min-height: 140px;
-}
 
 
     form {
-        padding: 2rem;
+        padding: 4rem;
         border-radius: 0.375rem;
         background-color: $DarkViolet;
         background-image: url("../../../public/images/bg-shorten-desktop.svg");
-
-        .row {
-            div {
-                margin-bottom: 15px;
-            }
-        }
     }
 
 
@@ -48,16 +36,12 @@ form{
     margin-left: 5rem;
     margin-right: 5rem;
     position: relative;
-    top: 60px;
+    top: 100px;
 }
 
-.list-area {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 5rem;
-    background-color: $Gray;
+input {
+    font-size:  $FontSize !important;
 }
-
 
 @media only screen and (max-width: $breakpoint-mobile) {
 
@@ -71,8 +55,11 @@ form{
         margin-right: 1rem;
     }
 
-    .list-area {
-        padding-left: 1rem;
-        padding-right: 1rem;
+    form{
+        padding: 2rem;
     }
+}
+
+.links-area{
+    margin-bottom: 30px;
 }

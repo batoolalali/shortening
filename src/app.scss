@@ -19,3 +19,8 @@ $FontFamily: Poppins, sans-serif;
 
 
 $breakpoint-mobile: 376px;
+
+.App {
+    font-size: $FontSize;
+    font-family: $FontFamily;
+}

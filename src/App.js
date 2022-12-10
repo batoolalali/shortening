@@ -1,12 +1,21 @@
-import AddToList from './components/List/AddToList';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/Home/Home';
+
 
 function App() {
   return (
-    <div className="App">
-     
-      <AddToList />
-    </div>
-  );
+    <BrowserRouter>
+
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </div>
+      </BrowserRouter >
+
+      );
 }
 
-export default App;
+      export default App;

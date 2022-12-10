@@ -24,13 +24,13 @@ export default function ListItem(props) {
             <ListGroup.Item className="list-item"  >
                 <Row className='list-item-row'>
 
-                    <Col md={5} lg={5} sm={10}>
+                    <Col md={6} lg={6} sm={10}>
                         <p className="origin-link">{props.links.original_link}</p>
                     </Col>
-                    <Col md={3} lg={3}>
+                    <Col md={4} lg={4} sm={10}>
                         <p className="shorten-link" value={props.links.original_link} >{props.links.full_short_link}  </p>
                     </Col>
-                    <Col md={1} lg={1}>
+                    <Col md={2} lg={2}>
                         <Button onClick={copyToClipboard} className={copySuccess} >{copySuccess}</Button>
                     </Col>
                 </Row>

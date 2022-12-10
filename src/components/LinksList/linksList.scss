@@ -1,0 +1,59 @@
+@import '../../app.scss';
+
+
+
+.origin-link {
+    overflow: auto;
+}
+
+
+.Copied{
+    background-color: $VeryDarkBlue !important;
+}
+
+.Copied::after{
+    content:"! "
+
+}
+
+.Copied, .Copy{
+    padding: 10px;
+    padding-right: 15px;
+}
+
+
+.list-div {
+    margin-top: 20px;
+    border-radius: 0.375rem;
+}
+
+.origin-link{
+    color: $VeryDarkBlue;
+}
+
+.shorten-link{
+    color: $Cyan;
+}
+
+.links-list {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    background-color: $Gray;
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+
+    .list-area {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .links-list{
+        padding-left: 2rem ;
+        padding-right: 2rem ;
+    }
+}
+.list-item{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}

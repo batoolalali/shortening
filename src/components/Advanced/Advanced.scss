@@ -1,14 +1,101 @@
 @import "../../app.scss";
 
+.advanced {
+    background-color: $Gray;
+    padding-top: 10rem;
 
-h3{
+}
+
+h3 {
     color: $VeryDarkBlue;
     font-weight: 800 !important;
+    font-size: $FontSize !important;
     text-align: center;
-    margin-top: 50px !important;
+    // margin-top: 50px !important;
 }
 
-.advanced p{
-   color: $GrayishViolet;
-   text-align: center;
+.advanced p {
+    color: $GrayishViolet;
+    text-align: center;
+
 }
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 350px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.my-card-img {
+
+    // overflow: hidden;
+    border-radius: 100%;
+    margin: -40px auto auto 40px;
+    background-color: $VeryDarkViolet;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.my-card-img img {
+    object-fit: cover;
+    // border-radius: 50%;
+    padding-top: 20px;
+}
+
+.cards-container .row {
+    justify-content: space-evenly;
+
+}
+
+
+.card {
+    min-height: 220px;
+
+
+}
+
+.cards-container {
+    padding-bottom: 10rem;
+    position: relative;
+
+}
+
+
+
+.line {
+
+    position: absolute;
+    border-bottom: 5px solid $Cyan;
+    top: 50%;
+    min-width: 77%;
+    left: 7rem;
+}
+
+.cards-row:nth-child(2){
+    margin-top: 20px;
+}
+
+.col1{
+    margin-top: 30px !important;
+}
+
+.col2{
+    margin-top: 60px !important;
+}
+
+
+@media only screen and (max-width: $breakpoint-mobile) {
+
+    .cards-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .line{
+        display: none;
+    }
+}
+

@@ -1,0 +1,23 @@
+@import '../../app.scss';
+
+
+.boost-div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-image: url("../../../public/images/bg-shorten-desktop.svg");
+    background-color: $DarkViolet;
+    background-size: cover;
+
+    h2 {
+        color: #ffff !important;
+
+    }
+
+    button {
+        border: none;
+        color: #ffff;
+        padding: 10px 20px 10px 20px;
+
+    }
+}
