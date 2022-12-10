@@ -1,6 +1,6 @@
 import React from "react";
 // import axios from 'axios';
-import { addLinkAsync } from "./linksListSlicer";
+import { addLinkAsync } from "../../slicer/linksListSlicer";
 import { useDispatch } from "react-redux";
 import { Form, Button, Col, Row } from "react-bootstrap";
 import { useState } from "react";

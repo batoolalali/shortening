@@ -7,9 +7,6 @@
 }
 
 
-.Copied{
-    background-color: $VeryDarkBlue !important;
-}
 
 .Copied::after{
     content:"! "
@@ -56,4 +53,9 @@
 .list-item{
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+}
+
+
+.Copied{
+    background-color: $VeryDarkBlue !important;
 }

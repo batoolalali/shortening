@@ -2,7 +2,7 @@ import React from "react";
 import { ListGroup } from "react-bootstrap";
 import "./linksList.scss";
 import ListItem from "./ListItem";
-import {  selectLinksList } from "../AddToListForm/linksListSlicer";
+import {  selectLinksList } from "../../slicer/linksListSlicer";
 import {  useSelector } from "react-redux";
 
 

@@ -4,10 +4,12 @@
 
 .links-list button , .links-area button{
     width: 100%;
-    background-color: $Cyan !important;
+    background-color: $Cyan ;
     font-size: $FontSize !important ;
 }
-
+button:hover{
+    background-color: $Cyan !important;
+}
 .form-control:focus {
     outline: $Red !important;
     border-color: $Red !important;
