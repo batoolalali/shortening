@@ -11,6 +11,10 @@ URL shortening is a technique on the Web in which a Uniform Resource Locator (UR
 - Sass
 - Bootstrap
 
+## Dataflow
 
+![img](./assesst/dataflow.jpg)
 
+## Components Sturcture
 
+![img](./assesst/structure.jpg)
